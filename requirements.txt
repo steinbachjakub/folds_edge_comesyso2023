@@ -8,3 +8,5 @@ ultralytics
 openpyxl
 ipython
 numpy~=1.25.0
+cvxpy
+pycddlib
