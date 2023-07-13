@@ -55,7 +55,7 @@ def find_inscribed_ellipsiod(mask):
 
     B = Bvar.value
     d = dvar.value
-    N = int(1e6)
+    N = int(1e3)
     dn = np.transpose(np.repeat([d], N, axis=0))
     t = np.linspace(0, 2 * np.pi, N)
     u = np.array([np.cos(t), np.sin(t)])

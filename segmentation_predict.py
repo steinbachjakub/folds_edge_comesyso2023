@@ -42,7 +42,7 @@ for img_path, result in zip(images, inference):
         cv2.imwrite(str(results_path.joinpath(img_path.name)), img)
         # cv2.imshow("Image", img)
         # cv2.waitKey(0)
-        # cv2.destroyAllWindows()
+        cv2.destroyAllWindows()
         #
 inference_results = pd.DataFrame(inference_results)
 inference_results.to_excel("inference_results.xlsx", index=False)
